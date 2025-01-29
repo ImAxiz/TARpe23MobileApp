@@ -100,5 +100,4 @@
         <Setter Property="FontAutoScalingEnabled" Value="False" />
     </Style>
 
-
 </ResourceDictionary>
