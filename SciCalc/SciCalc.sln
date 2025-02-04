@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.10.35122.118
+VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SciCalc", "SciCalc\SciCalc.csproj", "{538596B1-4C80-47A2-A040-DC1687614830}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SciCalc", "SciCalc\SciCalc.csproj", "{BCBC0E71-93FF-4A62-9E49-9D17080FF28B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{538596B1-4C80-47A2-A040-DC1687614830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{538596B1-4C80-47A2-A040-DC1687614830}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{538596B1-4C80-47A2-A040-DC1687614830}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{538596B1-4C80-47A2-A040-DC1687614830}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{538596B1-4C80-47A2-A040-DC1687614830}.Release|Any CPU.Build.0 = Release|Any CPU
-		{538596B1-4C80-47A2-A040-DC1687614830}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BCBC0E71-93FF-4A62-9E49-9D17080FF28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBC0E71-93FF-4A62-9E49-9D17080FF28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCBC0E71-93FF-4A62-9E49-9D17080FF28B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BCBC0E71-93FF-4A62-9E49-9D17080FF28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBC0E71-93FF-4A62-9E49-9D17080FF28B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCBC0E71-93FF-4A62-9E49-9D17080FF28B}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F58089C1-D63B-45DB-9914-6FA8AFCE178B}
 	EndGlobalSection
 EndGlobal

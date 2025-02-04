@@ -1,8 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ViewModels
 {
@@ -18,7 +15,7 @@ namespace ViewModels
         private bool isSciOpWaiting = false;
 
         [RelayCommand]
-        private void Reset() 
+        private void Reset()
         {
             CalculatedResult = "0";
             InputText = string.Empty;
@@ -26,20 +23,20 @@ namespace ViewModels
         }
 
         [RelayCommand]
-        private void Calculate() 
+        private void Calculate()
         {
-            if (InputText.Length == 0) 
+            if (InputText.Length == 0)
             {
                 return;
             }
 
-            if (isSciOpWaiting) 
+            if (isSciOpWaiting)
             {
                 InputText += ")";
                 isSciOpWaiting = false;
             }
 
-            try 
+            try
             {
                 var inputString = NormalizeInputString();
                 var expression = new NCalc.Expression(inputString);
@@ -47,12 +44,14 @@ namespace ViewModels
 
                 CalculatedResult = result.ToString();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
+
                 throw;
             }
         }
-        private string NormalizeInputString() 
+
+        private string NormalizeInputString()
         {
             Dictionary<string, string> _opMapper = new()
             {
@@ -71,14 +70,17 @@ namespace ViewModels
                 {"SQRT", "Sqrt"},
                 {"ABS", "Abs"},
             };
-            var retString = inputText;
+
+            var retString = InputText;
 
             foreach (var key in _opMapper.Keys)
             {
                 retString = retString.Replace(key, _opMapper[key]);
             }
+
             return retString;
         }
+
         [RelayCommand]
         private void Backspace()
         {
@@ -87,11 +89,13 @@ namespace ViewModels
                 InputText = InputText.Substring(0, InputText.Length - 1);
             }
         }
+
         [RelayCommand]
         private void NumberInput(string key)
         {
             InputText += key;
         }
+
         [RelayCommand]
         private void MathOperator(string op)
         {
@@ -102,6 +106,7 @@ namespace ViewModels
             }
             InputText += $" {op} ";
         }
+
         [RelayCommand]
         private void RegionOperator(string op)
         {
@@ -112,6 +117,7 @@ namespace ViewModels
             }
             InputText += $" {op} ";
         }
+
         [RelayCommand]
         private void ScientificOperator(string op)
         {
